@@ -1,0 +1,19 @@
+{
+  "name": "jensen-audit-log",
+  "version": "1.0.0",
+  "description": "Simple example of how to do audit logging",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miwashiab/jensen-audit-log.git"
+  },
+  "author": "Mikael Wallin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/miwashiab/jensen-audit-log/issues"
+  },
+  "homepage": "https://github.com/miwashiab/jensen-audit-log#readme"
+}
