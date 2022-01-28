@@ -1,16 +1,27 @@
 const express = require('express')
+const mongoose = require('mongoose')
 const auditLog = require('audit-log')
+auditLog.addTransport("console");
+auditLog.addTransport("mongoose", {connectionString: "mongodb://localhost/auditdb"})
 
 const port = process.env.PORT || 3000
 
-auditLog.addTransport("console");
+
 app = express()
 
 app.get('/', function(req,res){
-    //res.render('home')
-    auditLog.logEvent('user id or something', 'maybe script name or function', 'what just happened', 'the affected target name perhaps', 'target id', 'additional info, JSON, etc.');
+    
+    auditLog.logEvent(
+        'boomi', 
+        'maybe script name or function', 
+        'tried to log in', 
+        'the affected target name perhaps', 
+        'target id', 
+        'additional info, JSON, etc.'
+        );
 
-    res.send("Hello World")
+
+    res.send("Auditlog succeeded!")
 });
 
 app.listen(port , ()=>{
