@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/miwashiab/jensen-audit-log/issues"
   },
-  "homepage": "https://github.com/miwashiab/jensen-audit-log#readme"
+  "homepage": "https://github.com/miwashiab/jensen-audit-log#readme",
+  "dependencies": {
+    "audit-log": "^0.9.1",
+    "express": "^4.17.2"
+  }
 }
