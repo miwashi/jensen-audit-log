@@ -19,6 +19,6 @@
   "dependencies": {
     "audit-log": "^0.9.1",
     "express": "^4.17.2",
-    "mongoose": "^6.1.8"
+    "mongoose": "^6.12.1"
   }
 }
